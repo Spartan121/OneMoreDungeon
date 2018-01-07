@@ -26,8 +26,8 @@
     <sprite>sprites\spr_trigger</sprite>
     <sprite>sprites\spr_ladder</sprite>
     <sprite>sprites\obj_leaf</sprite>
-    <sprite>sprites\sprite_sample</sprite>
     <sprite>sprites\spr_camera</sprite>
+    <sprite>sprites\sprite_sample</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -35,23 +35,29 @@
     <script>scripts\image_single_random.gml</script>
   </scripts>
   <objects name="objects">
+    <objects name="Controllers">
+      <object>objects\obj_controller</object>
+      <object>objects\obj_generator</object>
+      <object>objects\obj_enemy_creator</object>
+    </objects>
     <objects name="Parents">
       <object>objects\blocking_parent</object>
       <object>objects\enemy_parent</object>
     </objects>
+    <objects name="Enemies">
+      <object>objects\obj_enemy_bat</object>
+    </objects>
+    <object>objects\obj_camera</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_statue</object>
     <object>objects\obj_trigger</object>
     <object>objects\obj_ladder</object>
     <object>objects\obj_chest</object>
-    <object>objects\obj_generator</object>
-    <object>objects\obj_controller</object>
-    <object>objects\obj_camera</object>
-    <object>objects\obj_enemy_creator</object>
-    <object>objects\obj_enemy_bat</object>
+    <object>objects\obj_floor</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\room_test</room>
+    <room>rooms\room_game</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
