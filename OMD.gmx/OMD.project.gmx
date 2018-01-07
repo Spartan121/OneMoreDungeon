@@ -20,6 +20,9 @@
       <sprite>sprites\spr_chest_closed</sprite>
       <sprite>sprites\spr_chest_opened</sprite>
     </sprites>
+    <sprites name="Enemies">
+      <sprite>sprites\spr_enemy_bat</sprite>
+    </sprites>
     <sprite>sprites\spr_trigger</sprite>
     <sprite>sprites\spr_ladder</sprite>
     <sprite>sprites\obj_leaf</sprite>
@@ -32,7 +35,10 @@
     <script>scripts\image_single_random.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\blocking_parent</object>
+    <objects name="Parents">
+      <object>objects\blocking_parent</object>
+      <object>objects\enemy_parent</object>
+    </objects>
     <object>objects\obj_wall</object>
     <object>objects\obj_statue</object>
     <object>objects\obj_trigger</object>
@@ -41,6 +47,8 @@
     <object>objects\obj_generator</object>
     <object>objects\obj_controller</object>
     <object>objects\obj_camera</object>
+    <object>objects\obj_enemy_creator</object>
+    <object>objects\obj_enemy_bat</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
